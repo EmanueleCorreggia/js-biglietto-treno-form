@@ -30,12 +30,39 @@
           </div>
         </div>
         <div class="row">
-          <button class="btn">Genera</button>
-          <button class="btn">Annulla</button>
+          <button id="genera"class="btn">Genera</button>
+          <button id="annulla" class="btn">Annulla</button>
         </div>
       </div>
     </div>
-    <div id="messaggio"></div>
-    <!-- <script src="js/script.js" charset="utf-8"></script> -->
+    <h1 class="title">IL TUO BIGLIETTO</h1>
+    <div id="biglietto"class="biglietto hidden">
+      <h2>Dettaglio Passeggeri</h2>
+      <div class="dettaglio-biglietto row">
+      <div class="col">
+        <h3>Nome passegero</h3>
+        <h4 id="nome-passeggero"></h4>
+      </div>
+      <div class="col">
+        <table>
+          <thead>
+            <tr>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice Cp</th>
+              <th>Costo Biglietto</th>
+            </tr>
+          </thead>
+          <tr>
+            <td id="offerta"></td>
+            <td id="carrozza"></td>
+            <td id="codice-cp"></td>
+            <td id="costo"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

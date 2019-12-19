@@ -52,7 +52,40 @@ select {
   border: 1px solid #B91350;
   font-size: 16px;
 }
-input:focus {
-  background-color: #B91350
+input:focus,
+select:focus {
+  background-color: #B91350;
   color:white;
+}
+input:focus::placeholder {
+  color:white;
+}
+.btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #B91350;
+  border: solid 1px grey;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+  background-color: grey;
+}
+.biglietto {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5;
+}
+.show {
+  opacity: 1;
+  transition: 0.5;
 }
