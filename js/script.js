@@ -1,10 +1,13 @@
 var kmDaPercorrere = parseInt(prompt('inserisci i km da percorrere'));
 console.log(kmDaPercorrere);
+
 var etaUtente = parseInt(prompt('inserisci l\ età del passeggero'));
 console.log(etaUtente);
+
 var prezzoKm = 0.21;
 var costoBiglietto = prezzoKm *kmDaPercorrere;
 console.log(costoBiglietto);
+
 var messaggio;
 // se minore di 18
 if (etaUtente < 18) {

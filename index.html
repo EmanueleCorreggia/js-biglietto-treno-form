@@ -3,10 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Biglietto Treno</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1 class="title">CALCOLA IL PREZZO DEL BIGLIETTO</h1>
+      <div class="form-dati">
+        <div class="row">
+          <div class="col">
+            <label for="nome-utente">Nome e Cognome</label>
+            <input id="nome-utente" type="text" name="" value=""placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="text" name="" value="" placeholder="km da percorrere">
+          </div>
+          <div class="col">
+            <label for="fascia-eta">Fascia d'eta'</label>
+            <select id="fascia-eta"class="" name="">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn">Genera</button>
+          <button class="btn">Annulla</button>
+        </div>
+      </div>
+    </div>
     <div id="messaggio"></div>
-    <script src="js/script.js" charset="utf-8"></script>
+    <!-- <script src="js/script.js" charset="utf-8"></script> -->
   </body>
 </html>
