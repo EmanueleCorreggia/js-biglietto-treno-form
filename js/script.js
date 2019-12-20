@@ -54,6 +54,9 @@ buttonGenera.addEventListener('click',
 var annulla = document.getElementById('annulla');
 annulla.addEventListener('click',
  function() {
+   var bigliettoDiv = document.getElementById("biglietto");
+   bigliettoDiv.classList.remove("show");
+   bigliettoDiv.classList.add("hidden");
    document.getElementById('nome-passeggero').inneHTML = '';
    document.getElementById('offerta').inneHTML = '';
    document.getElementById('costo').inneHTML = '';
@@ -64,8 +67,8 @@ annulla.addEventListener('click',
    document.getElementById('km').value = '';
    document.getElementById('fascia-eta').value = '';
 
-   var bigliettoDiv = document.getElementById("biglietto");
-   bigliettoDiv.classList.remove("show");
-   bigliettoDiv.classList.add("hidden");
+
+
+
  }
 );
