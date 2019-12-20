@@ -89,3 +89,30 @@ input:focus::placeholder {
   opacity: 1;
   transition: 0.5;
 }
+.dettaglio-passeggero {
+  background-color: grey;
+  width: 300Px;
+  height: 106px;
+  margin: 20px 0;
+}
+.dettaglio-biglietto {
+  display: flex;
+  justify-content:flex-start;
+}
+.stampa-biglietto {
+  width: 100%;
+  margin: 20px 0;
+}
+.pass {
+  margin-left: 25px;
+}
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+table {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  width: 100%;
+}
