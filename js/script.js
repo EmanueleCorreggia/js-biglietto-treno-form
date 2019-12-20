@@ -1,9 +1,8 @@
 var buttonGenera = document.getElementById('genera');
 buttonGenera.addEventListener('click',
   function() {
-    var nomeInput = document.getElementById('nome-utente');
-    var nome = nomeInput.value;
-    console.log(nome);
+    var nome = document.getElementById('nome').value;
+    document.getElementById('nome-passeggero').innerHTML= nome;
 
     var inputKm = document.getElementById('km');
     console.log(inputKm);
@@ -16,19 +15,27 @@ buttonGenera.addEventListener('click',
 
     var prezzoKm = 0.21;
     var costoBiglietto = prezzoKm * kmDaPercorrere;
+    document.getElementById('costo').innerHTML=costoBiglietto.toFixed(2);
     console.log(costoBiglietto);
 
     var offerta = 'Tariffa Standard';
     // se minore di 18
     if (fascia == 'minorenne') {
       costoBiglietto -= ((costoBiglietto * 20) / 100);
+      document.getElementById('offerta').innerHTML= ('Sconto Young');
       offerta = 'Sconto Minorenne';
+      document.getElementById('costo').innerHTML= costoBiglietto.toFixed(2);
     // se over65
   } else if (fascia == 'over65') {
+      document.getElementById('offerta').innerHTML= ('Sconto Silver');
       costoBiglietto -= ((costoBiglietto * 40) / 100);
       offerta = 'Sconto Silver';
+      document.getElementById('print_costo').innerHTML= costoBiglietto.toFixed(2);
     }
-
+    else {
+      document.getElementById('offerta').innerHTML= ('Tariffa Standard');
+      document.getElementById('costo').innerHTML= costoBiglietto.toFixed(2);
+    }
     var carrozza = Math.floor(Math.random() * 9) + 1;
     var codiceCp = Math.floor(Math.random() * (9999 - 9000) ) + 9000;
     document.getElementById('nome-passeggero').inneHTML = nome;
